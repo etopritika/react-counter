@@ -1,10 +1,11 @@
 import React from 'react';
+import Notiflix from 'notiflix';
 
 let renderCount = 0;
 
 export default React.memo(
   function IsFive({ value }) {
-    console.warn(`🔴 isFive render: ${++renderCount}`);
+    Notiflix.Notify.warning(`🔴 isFive render: ${++renderCount}`);
 
     const getResult = React.useMemo(() => {
       let i = 0;
