@@ -8,13 +8,13 @@ function App() {
 
   return (
     <div className="App">
-      <h5>Счетчик 1: </h5>
+      <h5>Counter 1: </h5>
       <div className="counter">
         <button onClick={() => setCount1(count1 + 1)}>+</button>
         <Count id={1} value={count1} />
       </div>
 
-      <h5>Счетчик 2: </h5>
+      <h5>Counter 2: </h5>
       <div className="counter">
         <button onClick={() => setCount2(count2 + 1)}>+</button>
         <Count id={2} value={count2} />
